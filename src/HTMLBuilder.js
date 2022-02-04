@@ -20,7 +20,7 @@ export const initBuilder = (callback) => {
 
     searchInput.addEventListener('keyup', (evt) => {
         const key = evt.key || evt.keyCode;
-        if(key === 13){
+        if( key === 'Enter' || key === 13 ){
             callback();
         }
     });
@@ -37,7 +37,6 @@ export const printRepos = (repos) => {
     const { items } = repos;
     let htmlOutput = '<ul>';
     items.map((repo) => {
-        console.log(repo);
         const { name, description, html_url, language } = repo;
 
         htmlOutput += `

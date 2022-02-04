@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+}
+
+.row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.input{
+    border-radius: 5px;
+    padding: 3px;
+    height: 1em;
+}
+
+.btn{
+    border-radius: 5px;
+    background-color: lightblue;
+    color: white;
+    padding: 3px;
+    border-color: white;
+}
